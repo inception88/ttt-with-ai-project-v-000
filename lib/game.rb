@@ -84,6 +84,15 @@ class Game
     else
       @board.display
       puts "Cat's Game!"
+    @board.display
+    self.turn
+    end
+    if won? 
+      puts "Congratulations #{@winner}!"
+      @board.display
+    else
+      puts "Cat's Game!"
+      @board.display
     end
   end
   
